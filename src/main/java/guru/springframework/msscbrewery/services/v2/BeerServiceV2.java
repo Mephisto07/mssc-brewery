@@ -1,11 +1,12 @@
 package guru.springframework.msscbrewery.services.v2;
 
 import guru.springframework.msscbrewery.web.model.v2.BeerDtoV2;
-import org.springframework.stereotype.Service;
 
 import java.util.UUID;
 
-@Service
+/**
+ * Created by jt on 2019-04-23.
+ */
 public interface BeerServiceV2 {
     BeerDtoV2 getBeerById(UUID beerId);
 
@@ -13,5 +14,5 @@ public interface BeerServiceV2 {
 
     void updateBeer(UUID beerId, BeerDtoV2 beerDto);
 
-    void deleteBeer(UUID beerId);
+    void deleteById(UUID beerId);
 }

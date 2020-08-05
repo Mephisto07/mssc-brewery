@@ -29,13 +29,11 @@ public class BeerServiceImpl implements BeerService {
 
     @Override
     public void updateBeer(UUID beerId, BeerDto beerDto) {
-        //todo impl
-        log.debug("Updating a beer...");
+        //todo impl - would add a real impl to update beer
     }
 
     @Override
-    public void deleteBeer(UUID beerId) {
-        //todo impl
+    public void deleteById(UUID beerId) {
         log.debug("Deleting a beer...");
     }
 }
